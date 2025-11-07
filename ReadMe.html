@@ -1,0 +1,478 @@
+<!DOCTYPE html><html><head>
+      <title>ReadMe</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+      <link rel="stylesheet" href="file:///c:\Users\HP\.vscode\extensions\shd101wyy.markdown-preview-enhanced-0.8.18\crossnote\dependencies\katex\katex.min.css">
+      
+      
+      
+      
+      
+      <style>
+      code[class*=language-],pre[class*=language-]{color:#333;background:0 0;font-family:Consolas,"Liberation Mono",Menlo,Courier,monospace;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;word-wrap:normal;line-height:1.4;-moz-tab-size:8;-o-tab-size:8;tab-size:8;-webkit-hyphens:none;-moz-hyphens:none;-ms-hyphens:none;hyphens:none}pre[class*=language-]{padding:.8em;overflow:auto;border-radius:3px;background:#f5f5f5}:not(pre)>code[class*=language-]{padding:.1em;border-radius:.3em;white-space:normal;background:#f5f5f5}.token.blockquote,.token.comment{color:#969896}.token.cdata{color:#183691}.token.doctype,.token.macro.property,.token.punctuation,.token.variable{color:#333}.token.builtin,.token.important,.token.keyword,.token.operator,.token.rule{color:#a71d5d}.token.attr-value,.token.regex,.token.string,.token.url{color:#183691}.token.atrule,.token.boolean,.token.code,.token.command,.token.constant,.token.entity,.token.number,.token.property,.token.symbol{color:#0086b3}.token.prolog,.token.selector,.token.tag{color:#63a35c}.token.attr-name,.token.class,.token.class-name,.token.function,.token.id,.token.namespace,.token.pseudo-class,.token.pseudo-element,.token.url-reference .token.variable{color:#795da3}.token.entity{cursor:help}.token.title,.token.title .token.punctuation{font-weight:700;color:#1d3e81}.token.list{color:#ed6a43}.token.inserted{background-color:#eaffea;color:#55a532}.token.deleted{background-color:#ffecec;color:#bd2c00}.token.bold{font-weight:700}.token.italic{font-style:italic}.language-json .token.property{color:#183691}.language-markup .token.tag .token.punctuation{color:#333}.language-css .token.function,code.language-css{color:#0086b3}.language-yaml .token.atrule{color:#63a35c}code.language-yaml{color:#183691}.language-ruby .token.function{color:#333}.language-markdown .token.url{color:#795da3}.language-makefile .token.symbol{color:#795da3}.language-makefile .token.variable{color:#183691}.language-makefile .token.builtin{color:#0086b3}.language-bash .token.keyword{color:#0086b3}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:hsla(24,20%,50%,.08);background:linear-gradient(to right,hsla(24,20%,50%,.1) 70%,hsla(24,20%,50%,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:hsla(24,20%,50%,.4);color:#f4f1ef;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px #fff}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}html body{font-family:'Helvetica Neue',Helvetica,'Segoe UI',Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#000}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#5c5c5c}html body strong{color:#000}html body del{color:#5c5c5c}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ol,html body>ul{margin-bottom:16px}html body ol,html body ul{padding-left:2em}html body ol.no-list,html body ul.no-list{padding:0;list-style-type:none}html body ol ol,html body ol ul,html body ul ol,html body ul ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#5c5c5c;background-color:#f0f0f0;border-left:4px solid #d6d6d6}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#d6d6d6;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:700;color:#000}html body table td,html body table th{border:1px solid #d6d6d6;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:700}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em;color:#000;background-color:#f0f0f0;border-radius:3px;padding:.2em 0}html body code::after,html body code::before{letter-spacing:-.2em;content:'\00a0'}html body pre>code{padding:0;margin:0;word-break:normal;white-space:pre;background:0 0;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;line-height:1.45;border:#d6d6d6;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:after,html body pre code:before,html body pre tt:after,html body pre tt:before{content:normal}html body blockquote,html body dl,html body ol,html body p,html body pre,html body ul{margin-top:0;margin-bottom:16px}html body kbd{color:#000;border:1px solid #d6d6d6;border-bottom:2px solid #c7c7c7;padding:2px 4px;background-color:#f0f0f0;border-radius:3px}@media print{html body{background-color:#fff}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#000;page-break-after:avoid}html body blockquote{color:#5c5c5c}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body code,html body pre{word-wrap:break-word;white-space:pre}}.markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview ul{list-style:disc}.markdown-preview ul ul{list-style:circle}.markdown-preview ul ul ul{list-style:square}.markdown-preview ol{list-style:decimal}.markdown-preview ol ol,.markdown-preview ul ol{list-style-type:lower-roman}.markdown-preview ol ol ol,.markdown-preview ol ul ol,.markdown-preview ul ol ol,.markdown-preview ul ul ol{list-style-type:lower-alpha}.markdown-preview .newpage,.markdown-preview .pagebreak{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center!important}.markdown-preview:not([data-for=preview]) .code-chunk .code-chunk-btn-group{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .status{display:none}.markdown-preview:not([data-for=preview]) .code-chunk .output-div{margin-bottom:16px}.markdown-preview .md-toc{padding:0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link div,.markdown-preview .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}.markdown-preview .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0;min-height:100vh}@media screen and (min-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode]) .markdown-preview{font-size:14px!important;padding:1em}}@media print{html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for=html-export]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,.66);border:4px solid rgba(150,150,150,.66);background-clip:content-box}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc{padding:0 16px}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link{display:inline;padding:.25rem 0}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link div,html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper .md-toc-link p{display:inline}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc .md-toc .md-toc-link-wrapper.highlighted .md-toc-link{font-weight:800}html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% - 300px);padding:2em calc(50% - 457px - 300px / 2);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for=html-export]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for=html-export]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}
+/* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+      </style>
+      <!-- The content below will be included at the end of the <head> element. --><script type="text/javascript">
+  document.addEventListener("DOMContentLoaded", function () {
+    // your code here
+  });
+</script></head><body for="html-export">
+    
+    
+      <div class="crossnote markdown-preview  ">
+      
+<h1 id="️-à-table---site-de-prestations-traiteur">🍽️ À Table - Site de prestations traiteur </h1>
+<h2 id="-présentation-du-projet">📌 Présentation du projet </h2>
+<p><strong>À Table</strong> est un site web dynamique de prestations traiteur, développé dans le cadre de la SAÉ 203 du BUT Métiers du Multimédia et de l’Internet (MMI).<br>
+Ce site permet aux utilisateurs de découvrir et proposer des offres culinaires pour différents événements, de s’inscrire, de se connecter, d’envoyer des messages ou encore de consulter les souvenirs d’événements passés.</p>
+<hr>
+<h2 id="-membres-du-groupe">👥 Membres du groupe </h2>
+<h2 id="juliette-quiévreux">Juliette Quiévreux </h2>
+<p><img src="readme\photojuliette.jpg" alt="Photo de Juliette"><br>
+mail : <a href="mailto:juliette.quievreux9@etu.univ-lorraine.fr">juliette.quievreux9@etu.univ-lorraine.fr</a></p>
+<hr>
+<h2 id="nicolas-muller">Nicolas Muller </h2>
+<p><img src="readme\photonicolas.jpg" alt="Photo de Nicolas"></p>
+<p>mail : <a href="mailto:nicolas.muller7@etu.univ-lorraine.fr">nicolas.muller7@etu.univ-lorraine.fr</a></p>
+<hr>
+<h2 id="-table-des-matières">📚 Table des matières </h2>
+<ol>
+<li>
+<p><a href="#-technologies-utilis%C3%A9es">Technologies utilisées</a></p>
+</li>
+<li>
+<p><a href="#%EF%B8%8F-fonctionnalit%C3%A9s-dynamiques">Fonctionnalités dynamiques</a></p>
+</li>
+<li>
+<p><a href="#%EF%B8%8F-pages-principales-du-site">Pages principales du site</a></p>
+</li>
+<li>
+<p><a href="#h%C3%A9bergement">Hébergement</a><br>
+-<a href="">URL d'hébergement de notre site</a></p>
+</li>
+<li>
+<p><a href="#int%C3%A9gration-web">Intégration Web</a><br>
+-<a href="#validation-w3c">Validation W3C</a><br>
+-<a href="#bootstrap">Bootstrap</a><br>
+-<a href="#responsive">Responsive</a></p>
+</li>
+<li>
+<p><a href="#d%C3%A9veloppement-web">Développement Web</a></p>
+</li>
+<li>
+<p><a href="#%EF%B8%8F-syst%C3%A8me-dinformation-et-bases-de-donn%C3%A9es">Système d'information et bases de données</a></p>
+</li>
+<li>
+<p><a href="#-design--maquettage">Design &amp; Maquettage</a></p>
+</li>
+<li>
+<p><a href="#-design--maquettage">Objectifs atteints</a></p>
+</li>
+<li>
+<p><a href="#-arborescence-du-projet">Arborescence du projet</a></p>
+</li>
+<li>
+<p><a href="#sobri%C3%A9t%C3%A9-et-%C3%A9co-conception">sobriété et éco-conception</a><br>
+-<a href="#score-eco-index-du-site">score eco-index du site</a><br>
+-<a href="#poids-de-chaque-page-du-site">poids de chaque page du site</a></p>
+</li>
+<li>
+<p><a href="#liste-des-%C3%A9l%C3%A9ments-faits-et-manquants-dans-le-projet">Liste des éléments faits et manquants dans le projet</a></p>
+</li>
+</ol>
+<hr>
+<h2 id="-technologies-utilisées">🧰 Technologies utilisées </h2>
+<ul>
+<li>HTML5</li>
+<li>CSS3 (pour modifier Bootstrap)</li>
+<li>Bootstrap 5</li>
+<li>PHP</li>
+<li>MySQL (base de données relationnelle)</li>
+</ul>
+<hr>
+<h2 id="-hébergement">🧱 Hébergement </h2>
+<h2 id="url-dhébergement-de-notre-site">URL d'hébergement de notre site </h2>
+<ul>
+<li>Always Data : <a href="https://sae203atable.alwaysdata.net/">https://sae203atable.alwaysdata.net/</a></li>
+<li>Webetu : <a href="https://webetu.iutnc.univ-lorraine.fr/~e96506u/sae203-atable/construction/index.php">https://webetu.iutnc.univ-lorraine.fr/~e96506u/sae203-atable/construction/index.php</a></li>
+</ul>
+<hr>
+<h2 id="-intégration-web">🧩 Intégration Web </h2>
+<h2 id="bootstrap">Bootstrap </h2>
+<p>Nous avons réutilisé tout les éléments de Athome.</p>
+<hr>
+<h2 id="responsive">Responsive </h2>
+<p><img src="readme\responsive600.jpg" alt="Capture 600px"><br>
+<img src="readme\responsive800.jpg" alt="Capture 8000px"><br>
+<img src="readme\responsive1000.jpg" alt="Capture 1000px"><br>
+<img src="readme\responsive1300.jpg" alt="Capture 1300px"></p>
+<hr>
+<h2 id="️-développement-web">🛠️ Développement Web </h2>
+<p><strong>Liste des blocs</strong></p>
+<ul>
+<li>
+<p>Formulaire d'inscription et de connexion dynamisé.</p>
+</li>
+<li>
+<p>Barre de recherche dynamisé.</p>
+</li>
+<li>
+<p>Modale dynamisé.</p>
+</li>
+<li>
+<p>Envoie de mail dynamisé.</p>
+</li>
+<li>
+<p>Enregistrement de mail pour un historique dynamisé, nous conservons l'heure, le message, le destinataire, la personne qui l'envoie afin de pouvoir redonner cela sous forme d'historique dans le profil de l'utilisateur.</p>
+</li>
+<li>
+<p>Affichage des demandes et des offres</p>
+</li>
+<li>
+<p>Création d'offre et de demande depuis la page profil.</p>
+</li>
+<li>
+<p>Opération qui ne peut ce faire que si on est sur un compte client pour demande et prestataire pour offre.</p>
+</li>
+<li>
+<p>Page souvenir permettant au client de partager des moments qu'ils ont apprécié.</p>
+</li>
+<li>
+<p>Accueil qui montre les dernières offres et demandes.</p>
+</li>
+<li>
+<p>Option pour changer le prénom, nom, mots de passe et le numéro de téléphone pour les clients ; ainsi que le numéro de téléphone et le mot de passe pour les prestataires.</p>
+</li>
+</ul>
+<hr>
+<h2 id="️-pages-principales-du-site">🗂️ Pages principales du site </h2>
+<p>Le site contient les pages suivantes :</p>
+<ul>
+<li><code>index.php</code> : page d’accueil du site</li>
+<li><code>contact.php</code> : formulaire de contact</li>
+<li><code>connexion.php</code> : page de connexion utilisateur</li>
+<li><code>deconnexion.php</code> : déconnexion de l’utilisateur</li>
+<li><code>inscription.php</code> : page d’inscription</li>
+<li><code>profil.php</code> : profil personnel de l’utilisateur connecté</li>
+<li><code>messages.php</code> : consultation des messages reçus</li>
+<li><code>afficheProposition.php</code> : page détaillée pour chaque proposition</li>
+<li><code>souvenirs.php</code> : galerie de souvenirs des événements passés</li>
+<li><code>mentionslegales.php</code> : page de mentions légales</li>
+<li><code>erreur404.php</code> : page d'erreur 404</li>
+<li><code>erreur403.php</code> : page d'erreur 403</li>
+<li><code>.htaccess</code> : page de sécurité</li>
+</ul>
+<hr>
+<h2 id="️-fonctionnalités-dynamiques">⚙️ Fonctionnalités dynamiques </h2>
+<ul>
+<li><strong>Système d'inscription et de connexion</strong> sécurisé avec PHP/MySQLi</li>
+<li><strong>Gestion des profils utilisateurs</strong></li>
+<li><strong>Envoi et réception de messages avec historique</strong></li>
+<li><strong>Consultation dynamique des offres traiteur</strong> depuis la base de données</li>
+<li><strong>Affichage de souvenirs</strong> d’événements passés sous forme de galerie</li>
+<li><strong>Formulaire de contact</strong> avec enregistrement en base ou envoi</li>
+<li><strong>Barre de recherche</strong></li>
+</ul>
+<hr>
+<h2 id="️-système-dinformation-et-bases-de-données">🗃️ Système d'information et bases de données </h2>
+<p>Lien vers fichier .sql de nos tables : téléchargeable dans l'index</p>
+<p>Le site repose sur une base de données relationnelle conçue selon deux étapes fondamentales :</p>
+<ul>
+<li>
+<p>Un <strong>Modèle Conceptuel de Données (MCD)</strong> réalisé sur Looping<br>
+<img src="readme\MCD.jpg" alt="MCD"><br>
+<img src="readme\explicationsmld.jpg" alt="Explicationsmld"></p>
+</li>
+<li>
+<p>Un <strong>Modèle Logique de Données (MLD)</strong>, réalisé à l'aide d'un codage sur Excel, ce qui a permis de structurer les différentes tables et leurs relations de manière visuelle avant de les implémenter dans la base de données MySQL.<br>
+<img src="readme\MLD.jpg" alt="MLD"></p>
+</li>
+</ul>
+<p><strong>Capture d'écran du Modèle Physique de Données</strong><br>
+<img src="readme\mpd.jpg" alt="Modèle Physique de Données"></p>
+<p><strong>Table</strong><br>
+<img src="readme\tablesdb.jpg" alt="Tabledb"></p>
+<p><strong>Structure de chaque table</strong></p>
+<p><strong>Clients</strong><br>
+<img src="readme\structureclients.jpg" alt="structure"><br>
+<img src="readme\atclients.jpg" alt="table"></p>
+<p><strong>Eating</strong><br>
+<img src="readme\structureeating.jpg" alt="structure"><br>
+<img src="readme\ateating.jpg" alt="table"></p>
+<p><strong>Events</strong><br>
+<img src="readme\structureevents.jpg" alt="structure"><br>
+<img src="readme\atevents.jpg" alt="table"></p>
+<p><strong>Feast</strong><br>
+<img src="readme\structurefeast.jpg" alt="structure"><br>
+<img src="readme\atfeast.jpg" alt="table"></p>
+<p><strong>Foods</strong><br>
+<img src="readme\structurefoods.jpg" alt="structure"><br>
+<img src="readme\atfoods.jpg" alt="table"></p>
+<p><strong>Memories</strong><br>
+<img src="readme\structurememories.jpg" alt="structure"><br>
+<img src="readme\atmemories.jpg" alt="table"></p>
+<p><strong>Message</strong><br>
+<img src="readme\structuremessages.jpg" alt="structure"><br>
+<img src="readme\atmessages.jpg" alt="table"></p>
+<p><strong>Occasions</strong><br>
+<img src="readme\structureoccasions.jpg" alt="structure"><br>
+<img src="readme\atoccasions.jpg" alt="table"></p>
+<p><strong>Offers</strong><br>
+<img src="readme\structureoffers.jpg" alt="structure"><br>
+<img src="readme\atoffers.jpg" alt="table"></p>
+<p><strong>Providers</strong><br>
+<img src="readme\structureproviders.jpg" alt="structure"><br>
+<img src="readme\atproviders.jpg" alt="table"></p>
+<p><strong>Requests</strong><br>
+<img src="readme\structurerequests.jpg" alt="structure"><br>
+<img src="readme\atrequests.jpg" alt="table"></p>
+<p><strong>Visual</strong><br>
+<img src="readme\structurevisual.jpg" alt="structures"></p>
+<hr>
+<h2 id="-requètes">🔍 Requètes </h2>
+<p>SELECT O.<em>, P.</em><br>
+FROM AT_OFFERS O<br>
+JOIN AT_PROVIDERS P ON O.PR_Code = P.PR_Code<br>
+ORDER BY O.OF_Code;';</p>
+<p>Permet de récupérer toute les infos des offres et des prestataires.</p>
+<hr>
+<p>if (<span style="color: #ee7f49; font-weight: 500;">ParseError: KaTeX parse error: Expected '}', got 'EOF' at end of input: …tataire == 0) {</span>requete = "INSERT INTO AT_CLIENTS (CL_Code, CL_LastName, CL_FirstName, CL_Phone, CL_Mail, CL_City, CL_PostalCode, CL_Profil, CL_Username, CL_Password)<br>
+VALUES (NULL, ?, ?, ?, ?, ?, ?, NULL, ?, ?)";<br>
+} else {<br>
+$requete = "INSERT INTO AT_PROVIDERS<br>
+(PR_Code, PR_Label, PR_Phone, PR_Mail, PR_WebSite, PR_Profil, PR_PostalCode, PR_Adress, PR_City, PR_Username, PR_Password)<br>
+VALUES (NULL, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";<br>
+}</p>
+<p>Permet d'inscrire un utilisateur en fonction de si il coche prestataire ou non (donc client)</p>
+<hr>
+<p>INSERT INTO AT_MESSAGES (sender_username, recipient_username, message_text)<br>
+VALUES ('<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>u</mi><mi>s</mi><mi>e</mi><mi>r</mi><mi>n</mi><mi>a</mi><mi>m</mi><msup><mi>e</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><msup><mo separator="true">,</mo><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">username', '</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9463em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">u</span><span class="mord mathnormal" style="margin-right:0.02778em;">ser</span><span class="mord mathnormal">nam</span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mpunct"><span class="mpunct">,</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>recipient_username', '$message_text')";</p>
+<p>Permet d'envoyer un message et d'en sauvegarder une trace pour l'historique.</p>
+<hr>
+<pre class="language-text">$query = "SELECT * FROM AT_MESSAGES WHERE sender_username = '$username' OR recipient_username = '$username' ORDER BY message_date DESC";
+</pre>
+<p>Permet d'afficher l'historique de message en fonction de leur date d'envoie.</p>
+<hr>
+<p>"SELECT X.At_FirstName<br>
+FROM (<br>
+SELECT 'Client' AS Type, CL_FirstName AS At_FirstName, CL_Username FROM AT_CLIENTS<br>
+UNION ALL<br>
+SELECT 'Prestataire', PR_Label AS At_FirstName, PR_Username AS CL_Username FROM AT_PROVIDERS<br>
+) AS X<br>
+WHERE X.CL_Username = ?";</p>
+<p>Permet de récuperer le nom de la personne et de l'afficher (Prestataire = label)</p>
+<hr>
+<p>$sql = "INSERT INTO AT_OFFERS (OF_Label, OF_Description, OF_Price, OF_Pictures, PR_Code, OF_MinGuest, OF_MaxGuest)<br>
+VALUES (?, ?, ?, NULL, ?, ?, ?)";</p>
+<p>Permet la création d'offre</p>
+<hr>
+<p>"INSERT INTO AT_REQUESTS (RE_Label, RE_Description, RE_Date, RE_City, RE_PostalCode, RE_Guest, RE_Budget, EV_Code, CL_Code)<br>
+VALUES ('<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>l</mi><mi>a</mi><mi>b</mi><mi>e</mi><msup><mi>l</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><msup><mo separator="true">,</mo><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">label', '</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9463em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="mord mathnormal">ab</span><span class="mord mathnormal">e</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mpunct"><span class="mpunct">,</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>description', '<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>d</mi><mi>a</mi><mi>t</mi><msup><mi>e</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><msup><mo separator="true">,</mo><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup></mrow><annotation encoding="application/x-tex">date', '</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9463em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">a</span><span class="mord mathnormal">t</span><span class="mord"><span class="mord mathnormal">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mpunct"><span class="mpunct">,</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span></span></span></span>ville', '<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>c</mi><mi>o</mi><mi>d</mi><mi>e</mi><mi>P</mi><mi>o</mi><mi>s</mi><mi>t</mi><mi>a</mi><msup><mi>l</mi><mo mathvariant="normal" lspace="0em" rspace="0em">′</mo></msup><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">codePostal',</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9463em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">co</span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal" style="margin-right:0.13889em;">P</span><span class="mord mathnormal">os</span><span class="mord mathnormal">t</span><span class="mord mathnormal">a</span><span class="mord"><span class="mord mathnormal" style="margin-right:0.01968em;">l</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7519em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">′</span></span></span></span></span></span></span></span></span><span class="mpunct">,</span></span></span></span>nbInvite, <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>b</mi><mi>u</mi><mi>d</mi><mi>g</mi><mi>e</mi><mi>t</mi><mo separator="true">,</mo></mrow><annotation encoding="application/x-tex">budget,</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">b</span><span class="mord mathnormal">u</span><span class="mord mathnormal">d</span><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mpunct">,</span></span></span></span>evenement, $codeClient)";</p>
+<p>Permet la création d'une demande</p>
+<hr>
+<p>"SELECT R.<em>, C.</em>, E.*<br>
+FROM AT_REQUESTS R<br>
+JOIN AT_CLIENTS C ON R.CL_Code = C.CL_Code<br>
+JOIN AT_EVENTS E ON R.EV_Code = E.EV_Code<br>
+WHERE RE_Label LIKE '%<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>s</mi><mi>e</mi><mi>a</mi><mi>r</mi><mi>c</mi><mi>h</mi></mrow><annotation encoding="application/x-tex">search%' OR RE_Description LIKE '%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">se</span><span class="mord mathnormal">a</span><span class="mord mathnormal">rc</span><span class="mord mathnormal">h</span></span></span></span>search%'";</p>
+<p>Requete pour la barre de recherche</p>
+<hr>
+<p>"SELECT * FROM AT_MEMORIES ORDER BY ME_Date DESC;";</p>
+<p>Récuperation de la catégorie souvenir</p>
+<hr>
+<h2 id="-design--maquettage">🎨 Design &amp; Maquettage </h2>
+<p>Une <strong>maquette Figma</strong> a été conçue en amont du développement afin de structurer le parcours utilisateur et harmoniser le design général.<br>
+Le site est entièrement responsive grâce à <strong>Bootstrap</strong>, et respecte une charte graphique sobre et professionnelle.</p>
+<hr>
+<h2 id="-objectifs-atteints">✅ Objectifs atteints </h2>
+<ul>
+<li>Développement d’un site complet et fonctionnel</li>
+<li>Intégration et exploitation d’une base de données relationnelle</li>
+<li>Création de fonctionnalités interactives (connexion, messages, contact)</li>
+<li>Réalisation d’une maquette Figma fidèle au rendu final</li>
+<li>Respect des contraintes techniques et esthétiques de la SAÉ 203</li>
+<li>Travail collaboratif efficace et équilibré</li>
+</ul>
+<hr>
+<h2 id="-arborescence-du-projet">📁 Arborescence du projet </h2>
+<p>sae203-atable<br>
+├─ .htaccess<br>
+├─ construction<br>
+│  ├─ bibli.php<br>
+│  ├─ connexion_mysql.php<br>
+│  ├─ favicon.svg<br>
+│  ├─ index.php<br>
+│  ├─ medias<br>
+│  │  ├─ contenu<br>
+│  │  │  ├─ Construction.webp<br>
+│  │  │  ├─ offre<br>
+│  │  │  │  └─ intro.webp<br>
+│  │  │  ├─ photoEntreprise<br>
+│  │  │  │  ├─ airMarinUser.webp<br>
+│  │  │  │  ├─ cakePlaisirUser.webp<br>
+│  │  │  │  ├─ cakeUser.webp<br>
+│  │  │  │  ├─ canaUser.webp<br>
+│  │  │  │  ├─ carrouselbergUser.webp<br>
+│  │  │  │  ├─ CherrierUser.webp<br>
+│  │  │  │  ├─ CyprienUser.webp<br>
+│  │  │  │  ├─ FineMareeUser.webp<br>
+│  │  │  │  ├─ GalceUser.webp<br>
+│  │  │  │  ├─ GourmandeUser.webp<br>
+│  │  │  │  ├─ GroletUser.webp<br>
+│  │  │  │  ├─ HammametUser.webp<br>
+│  │  │  │  ├─ HarmonieUser.webp<br>
+│  │  │  │  ├─ JumeauxUser.webp<br>
+│  │  │  │  ├─ LeGarconUser.webp<br>
+│  │  │  │  ├─ LesFillesUser.webp<br>
+│  │  │  │  ├─ MarcinoUser.webp<br>
+│  │  │  │  ├─ MessineUser.webp<br>
+│  │  │  │  ├─ NiceUser.webp<br>
+│  │  │  │  ├─ PerelleUser.webp<br>
+│  │  │  │  ├─ PlaisirUser.webp<br>
+│  │  │  │  ├─ PoilaneUser.webp<br>
+│  │  │  │  ├─ RitzUser.webp<br>
+│  │  │  │  ├─ RomainvilleUser.webp<br>
+│  │  │  │  └─ YankaUser.webp<br>
+│  │  │  ├─ photoOffre<br>
+│  │  │  │  ├─ blinis.webp<br>
+│  │  │  │  ├─ cremeBrulee.webp<br>
+│  │  │  │  ├─ crepeFramboise.webp<br>
+│  │  │  │  ├─ cylindreChocoBlanc.webp<br>
+│  │  │  │  ├─ dosCabillaud.webp<br>
+│  │  │  │  ├─ parisBrest.webp<br>
+│  │  │  │  ├─ samoussaPoulet.webp<br>
+│  │  │  │  ├─ supremeVolaille.webp<br>
+│  │  │  │  ├─ tacoSaumon.webp<br>
+│  │  │  │  └─ tarteletteSaintJacques.webp<br>
+│  │  │  └─ photoProfil<br>
+│  │  │     ├─ AlbaUser.webp<br>
+│  │  │     ├─ AlbaUserM.webp<br>
+│  │  │     ├─ EmmaUser.webp<br>
+│  │  │     ├─ EmmaUserM.webp<br>
+│  │  │     ├─ GabrielUser.webp<br>
+│  │  │     ├─ GabrielUserM.webp<br>
+│  │  │     ├─ JadeUser.webp<br>
+│  │  │     ├─ JadeUserM.webp<br>
+│  │  │     ├─ JamalUser.webp<br>
+│  │  │     ├─ JamalUserM.webp<br>
+│  │  │     ├─ LeoUser.webp<br>
+│  │  │     ├─ LeoUserM.webp<br>
+│  │  │     ├─ LouiseUser.webp<br>
+│  │  │     ├─ LouiseUserM.webp<br>
+│  │  │     ├─ MaelUser.webp<br>
+│  │  │     ├─ MaelUserM.webp<br>
+│  │  │     ├─ RaphaelUser.webp<br>
+│  │  │     ├─ RaphaelUserM.webp<br>
+│  │  │     ├─ RomyUser.webp<br>
+│  │  │     └─ RomyUserM.webp<br>
+│  │  └─ interface<br>
+│  │     ├─ erreur403.webp<br>
+│  │     ├─ erreur404.webp<br>
+│  │     ├─ Fichier_24x.webp<br>
+│  │     └─ logo.svg<br>
+│  └─ pages<br>
+│     ├─ 403.php<br>
+│     ├─ 404.php<br>
+│     ├─ afficheProposition.php<br>
+│     ├─ connexion.php<br>
+│     ├─ contact.php<br>
+│     ├─ deconnexion.php<br>
+│     ├─ inscription.php<br>
+│     ├─ mentionlegal.php<br>
+│     ├─ messages.php<br>
+│     ├─ profil.php<br>
+│     ├─ recherche.php<br>
+│     └─ souvenirs.php<br>
+├─ index.php<br>
+├─ medias<br>
+├─ photojuliette.jpg<br>
+├─ photonicolas.jpg<br>
+└─ <a href="http://ReadMe.md">ReadMe.md</a></p>
+<hr>
+<h2 id="-sobriété-et-éco-conception">🌱 sobriété et éco-conception </h2>
+<h2><img src="readme\eco.png" alt="Capture écoconception"></h2>
+<h2 id="️-score-eco-index-du-site">♻️ Score eco-index du site </h2>
+<h2>80/100<br>
+Score : B</h2>
+<h2 id="-poids-de-chaque-page-du-site">🌍 Poids de chaque page du site </h2>
+<p>0.968 Mo</p>
+<hr>
+<h2 id="-liste-des-éléments-faits-et-manquants-dans-le-projet">🎯 Liste des éléments faits et manquants dans le projet </h2>
+<p><strong>Générales</strong><br>
+✓ Utiliser les langages web vus en cours : HTML, CSS, JS, PHP.<br>
+✓ Utiliser une base de données relationnelle et le langage associé SQL.<br>
+✓Les codes (HTML, CSS, JS, PHP) devront être écrits selon les règles et conventions en vigueur, correctement indentés et commentés.<br>
+✓Vous devrez utiliser le logiciel VSCode pour l'édition des codes informatiques et la mise en ligne sur les serveurs.<br>
+✓Le site (par son thème, ses données, ses contenus médias ou textuels...) ne devra contenir aucune connotation ou interprétation politique, religieuse, sexuelle etc.<br>
+X Les médias intégrés pourront être tirés d'internet mais devront être libres de droit<br>
+✓ Il ne faut pas reprendre le concept/le site créé en sae105</p>
+<p><strong>Intégration</strong></p>
+<p>✓Maintien des contraintes déjà en vigueur dans la SAÉ 105<br>
+✓Les fichiers seront organisés en dossiers, conformément aux préconisations d'arborescence faites en cours IntegWeb (classement des fichiers selon leur type ou fonctions).<br>
+✓Les pages créées doivent être valides (respect des normes W3C)<br>
+✓Les éléments d'intégration en faveur de l'accessibilité devront être utilisés partout où cela est possible (images, liens, formulaires...)<br>
+✓Une barre de navigation devra être présente sur toutes les pages pour accéder aux différentes parties du site (voir exemples mis à disposition dans la section "Documents / Liens utiles")<br>
+✓Sur l'ensemble du site, vous devrez avoir intégré un maximum d'éléments sémantiques abordés en intégration : titres, paragraphes, médias, listes, tableaux, formulaire etc.<br>
+✓Votre site devra contenir au moins un formulaire. La soumission du formulaire donnera lieu à l'envoi des informations saisies par mail à un étudiant du binôme. Le formulaire ne devra pouvoir être soumis que si les données sont correctes (bons types de champs, champs obligatoires ou non)<br>
+✓Les médias devront être optimisés pour une diffusion sur le web (format, taille, niveau de compression...)<br>
+✓Votre site devra intégrer une favicon personnalisée<br>
+✓Les méta données (auteur, mots clés, description, title...) devront être à jour et bien choisies</p>
+<p><strong>Éléments spécifiques à la SAÉ 203</strong></p>
+<p>✓Le site devra exploiter au maximum la plateforme BOOTSTRAP dans sa version en cours (5.3)<br>
+✓Bootstrap devra être utilisé en mode "CDN" (voir fin du TP @Home). Pas de dossier dist à stocker donc<br>
+✓Il est interdit d'utiliser un modèle (template) BOOTSTRAP existant. L'utilisation d'un modèle existant entrainera la note de 0<br>
+✓Le site devra avoir une structure qui se détache au maximum de l'exemple @Home<br>
+✓Dans la version dynamique, il n'y aura plus de fichier d'extension .html, il faudra utiliser l'extension PHP pour tous les fichiers, même si il n'y a pas de code PHP dans certains de ces fichiers. Par conséquent, la page principale du site sera nommée index.php<br>
+✓Il faudra intégrer un contenu rédactionnel significatif dans les pages statiques<br>
+✓Les pages devront être 100% responsive et donc s'afficher parfaitement sur tous les tailles d'écran<br>
+✓Toutes les images bitmap devront être stockées au format webp ou avif<br>
+✓Attention : il est important lors de l'intégration de fragments de code bootstrap depuis la documentation :<br>
+de s'assurer qu'il n'y a pas de valeur d'id dupliquée (il reste donc indispensable d'opérer la validation w3c des codes html)<br>
+d'ajouter un maximum de sémantique en remplaçant les </p><div> qui peuvent l'être par les balises sémantiques adaptées (section, article, aside, blockquote etc.).<p></p>
+<p><strong>Système d'information</strong></p>
+<p>✓Votre système d'information devra exploiter un nombre d'environ 6 à 10 tables avec des liaisons (mécanisme de clé étrangère).<br>
+✓Votre MCD devra contenir au moins une association hiérarchique (1-n) et au moins une association non hiérarchique (n-n)<br>
+✓L'interclassement de vos tables sera "utf8_mb4general_ci"<br>
+✓Le moteur de base de données sera "myisam" (pas innodb). Les contraintes de clés étrangères ne sont par conséquent pas à matérialiser<br>
+✓Le nom de chaque table doit être préfixé par le nom du projet (ou ses initiales). Sur le projet nommé athome, cela donnerait ces noms de table : athome_categories, athome_biens et athome_employes<br>
+✓Le nom de chaque champ sera préfixé par les initiales de sa table<br>
+✓Les noms de tables et de champs de votre base seront en anglais<br>
+✓Dans votre projet, vous devrez utiliser a minima certaines requêtes de type jointure, exploitant donc la relation existant entre les tables, mais aussi les clauses de filtrage (WHERE) et de classement (ORDER BY). Des requêtes plus avancées (limit, having, group by, fonctions sql, imbriquées...) sont bienvenues et donneront lieu à un bonus.<br>
+✓Vos tables devront contenir une quantité significative d'enregistrements<br>
+✓Un mot de passe stocké dans un champ ne doit pas l'être en clair, il devra être crypté via la fonction php: sha1()</p>
+<p><strong>Développement web</strong></p>
+<p>✓Le développement reposera sur PHP et des fonctions MYSQLi pour l'accès aux bases de données, en utilisant les instructions vues en cours. Pour toute autre instructions PHP demander validation.<br>
+✓Le code doit être bien commenté pour chaque ligne technique.<br>
+✓Le code devra être factorisé (la barre de navigation, le footer seront dans des fichiers séparés)</p>
+<p><strong>Optionnel pour améliorer la note</strong> :</p>
+<p>✓Il doit y avoir un système de connexion dans la barre de navigation qui envoie sur un formulaire de connexion. Il faudra une table contenant les données de connexion et les mots de passe devront être hashés dans la table. Si la connexion se passe bien, on revient automatiquement sur la page d'accueil du site sinon cela affiche un message d'erreur dans la page connexion. Dans cette même page, il doit y avoir un lien vers une page d'inscription et une page de modification de mot de passe.<br>
+✓Lorsque vous êtes connecté, la barre de navigation doit évoluer en permettant d'accéder à sa page profil (et/ou une page panier) et aussi un lien de déconnexion.<br>
+✓Pour le formulaire de contact : Les données du formulaire devront être envoyées par mail (voir exemple disponible dans la section "Documents / Liens utiles"). Voir exemple de code script réalisant l'envoi par mail (à adapter par rapport à votre formulaire)<br>
+✓Le formulaire devra permettre de saisir l'adresse mail destinataire des données<br>
+✓Il faut pouvoir naviguer dans les champs du formulaire par le clavier (accessibilité)La barre de navigation devra contenir un formulaire de recherche fonctionnel.<br>
+✓Pour les requêtes envoyées vers la BDD, elles devront respecter au mieux les bonnes pratiques de sécurité vues en cours afin déviter les attaques d'injections de code.</p>
+<p><strong>Hébergement</strong></p>
+<p>✓Maintien des contraintes déjà en vigueur dans la SAÉ 105<br>
+✓Vous devrez avoir mis en place un fichier .htaccess à la racine de votre projet<br>
+interdisant le "listage" des fichiers/dossiers du projet (redirection vers l'index)<br>
+spécifiant des pages "error 404" et "error 403 " personnalisées, conforme à l'identité visuelle de votre site</p>
+<p>Éléments spécifiques à la SAÉ 203<br>
+✓Votre site devra être hébergé sur deux espaces web : le serveur webetu d'un étudiant du binôme et chez l'hébergeur AlwaysData (<a href="https://www.alwaysdata.com/fr">https://www.alwaysdata.com/fr</a>). Les étudiants ayant déjà un hébergeur personnel ou souhaitant acquérir leur propre nom de domaine et hébergement sont libres de le faire et de l'utiliser pour gérer un troisième hébergement.</p>
+<hr>
+<p>Nous avons fait un usage raisonné de l’intelligence artificielle, en sollicitant une aide modérée.</p>
+<h2 id="-projet-réalisé-dans-le-cadre-de-la-saé-203---but-mmi-1ère-année-saint-dié-des-vosges">🧠 Projet réalisé dans le cadre de la SAÉ 203 - BUT MMI 1ère année Saint-Dié-Des-Vosges </h2>
+</div>
+      </div>
+      
+      
+    
+    
+    
+    
+    
+    
+  
+    </body></html>
