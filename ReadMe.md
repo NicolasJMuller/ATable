@@ -12,7 +12,7 @@ Ce site permet aux utilisateurs de découvrir et proposer des offres culinaires 
 
 ## Juliette Quiévreux
 ![Photo de Juliette](/readme/photojuliette.jpg)
-mail : juliette.quievreux9@etu.univ-lorraine.fr
+mail : caché pour github
 
 
 
@@ -545,3 +545,4 @@ Nous avons fait un usage raisonné de l’intelligence artificielle, en sollicit
 
 
 ## 🧠 Projet réalisé dans le cadre de la SAÉ 203 - BUT MMI 1ère année Saint-Dié-Des-Vosges
+
