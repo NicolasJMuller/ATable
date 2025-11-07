@@ -543,4 +543,5 @@ spécifiant des pages "error 404" et "error 403 " personnalisées, conforme à l
 
 Nous avons fait un usage raisonné de l’intelligence artificielle, en sollicitant une aide modérée.
 
+
 ## 🧠 Projet réalisé dans le cadre de la SAÉ 203 - BUT MMI 1ère année Saint-Dié-Des-Vosges
